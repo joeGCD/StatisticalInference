@@ -37,7 +37,10 @@ simulations <- 1000
 ```{r expo}
 simulatedData <- matrix(rexp(simulations * exponentials, rate=lambda), 
                                 nrow = simulations, ncol = exponentials)
+#head(simulatedData)
+
 expoAvgData <- rowMeans(simulatedData)
+head(expoAvgData)
 ```
 
 #### 1. Show where the distribution is centered at and compare it to the theoretical center of the distribution.
